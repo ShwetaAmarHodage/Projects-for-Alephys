@@ -1,0 +1,1075 @@
+{
+	"info": {
+		"_postman_id": "9fcfbda1-74f9-4493-b25a-9714e1f2719c",
+		"name": "ExpenseTracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39277039"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Add a category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Business\",\r\n    \"type\": \"INCOME\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories"
+							]
+						},
+						"description": "Generated from cURL: curl -X POST http://localhost:8080/api/categories \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -d '{\r\n    \"name\": \"Rent\",\r\n    \"type\": \"EXPENSE\"\r\n}'\r\n"
+					},
+					"response": [
+						{
+							"name": "http://localhost:8080/api/categories",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Rent\",\r\n    \"type\": \"EXPENSE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 22 May 2025 18:28:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Rent\",\n    \"type\": \"EXPENSE\"\n}"
+						},
+						{
+							"name": "http://localhost:8080/api/categories",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Food\",\r\n    \"type\": \"EXPENSE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 22 May 2025 18:29:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"Food\",\n    \"type\": \"EXPENSE\"\n}"
+						},
+						{
+							"name": "http://localhost:8080/api/categories",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Travel\",\r\n    \"type\": \"EXPENSE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 22 May 2025 18:29:34 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"name\": \"Travel\",\n    \"type\": \"EXPENSE\"\n}"
+						},
+						{
+							"name": "http://localhost:8080/api/categories",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Salary\",\r\n    \"type\": \"INCOME\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 22 May 2025 18:30:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"name\": \"Salary\",\n    \"type\": \"INCOME\"\n}"
+						},
+						{
+							"name": "http://localhost:8080/api/categories",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Business\",\r\n    \"type\": \"INCOME\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 22 May 2025 18:31:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"name\": \"Business\",\n    \"type\": \"INCOME\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories"
+							]
+						},
+						"description": "Generated from cURL: curl http://localhost:8080/api/categories\r\n"
+					},
+					"response": [
+						{
+							"name": "http://localhost:8080/api/categories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 22 May 2025 18:31:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Rent\",\n        \"type\": \"EXPENSE\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Food\",\n        \"type\": \"EXPENSE\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Travel\",\n        \"type\": \"EXPENSE\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Salary\",\n        \"type\": \"INCOME\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Business\",\n        \"type\": \"INCOME\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get all categories filter by type expense",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/categories?type=EXPENSE",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "EXPENSE"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl \"http://localhost:8080/api/categories?type=EXPENSE\"\r\n"
+					},
+					"response": [
+						{
+							"name": "http://localhost:8080/api/categories?type=EXPENSE",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/categories?type=EXPENSE",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "EXPENSE"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 22 May 2025 18:31:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Rent\",\n        \"type\": \"EXPENSE\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Food\",\n        \"type\": \"EXPENSE\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Travel\",\n        \"type\": \"EXPENSE\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get all categories filter by type income",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/categories?type=INCOME",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "INCOME"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl \"http://localhost:8080/api/categories?type=INCOME\"\r\n"
+					},
+					"response": [
+						{
+							"name": "http://localhost:8080/api/categories?type=INCOME",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/categories?type=INCOME",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "INCOME"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 22 May 2025 18:31:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 4,\n        \"name\": \"Salary\",\n        \"type\": \"INCOME\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Business\",\n        \"type\": \"INCOME\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Add income and expenses",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"amount\": 1000,\r\n  \"date\": \"2025-05-01\",\r\n  \"type\": \"EXPENSE\",\r\n  \"category\": {\r\n    \"id\": 3,\r\n    \"name\": \"Travel\",\r\n    \"type\": \"EXPENSE\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transaction"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8080/api/transaction \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -d '{\"type\":\"INCOME\",\"category\":\"SALARY\",\"amount\":5000,\"date\":\"2025-05-01\"}'\r\n"
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/transaction",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"amount\": 80000,\r\n  \"date\": \"2025-05-01\",\r\n  \"type\": \"INCOME\",\r\n  \"category\": {\r\n    \"id\": 4,\r\n    \"name\": \"Salary\",\r\n    \"type\": \"INCOME\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transaction"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 22 May 2025 19:22:58 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 7,\n    \"amount\": 80000,\n    \"date\": \"2025-05-01\",\n    \"type\": \"INCOME\",\n    \"category\": {\n        \"id\": 4,\n        \"name\": \"Salary\",\n        \"type\": \"INCOME\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost:8080/api/transaction",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"amount\": 80000,\r\n  \"date\": \"2025-05-01\",\r\n  \"type\": \"INCOME\",\r\n  \"category\": {\r\n    \"id\": 5,\r\n    \"name\": \"Business\",\r\n    \"type\": \"INCOME\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transaction"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 22 May 2025 19:23:30 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 8,\n    \"amount\": 80000,\n    \"date\": \"2025-05-01\",\n    \"type\": \"INCOME\",\n    \"category\": {\n        \"id\": 5,\n        \"name\": \"Business\",\n        \"type\": \"INCOME\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost:8080/api/transaction",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"amount\": 4000,\r\n  \"date\": \"2025-05-01\",\r\n  \"type\": \"EXPENSE\",\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"Rent\",\r\n    \"type\": \"EXPENSE\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transaction"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 22 May 2025 19:24:27 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9,\n    \"amount\": 4000,\n    \"date\": \"2025-05-01\",\n    \"type\": \"EXPENSE\",\n    \"category\": {\n        \"id\": 1,\n        \"name\": \"Rent\",\n        \"type\": \"EXPENSE\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost:8080/api/transaction",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"amount\": 3000,\r\n  \"date\": \"2025-05-01\",\r\n  \"type\": \"EXPENSE\",\r\n  \"category\": {\r\n    \"id\": 2,\r\n    \"name\": \"Food\",\r\n    \"type\": \"EXPENSE\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transaction"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 22 May 2025 19:24:51 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 10,\n    \"amount\": 3000,\n    \"date\": \"2025-05-01\",\n    \"type\": \"EXPENSE\",\n    \"category\": {\n        \"id\": 2,\n        \"name\": \"Food\",\n        \"type\": \"EXPENSE\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost:8080/api/transaction",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"amount\": 1000,\r\n  \"date\": \"2025-05-01\",\r\n  \"type\": \"EXPENSE\",\r\n  \"category\": {\r\n    \"id\": 3,\r\n    \"name\": \"Travel\",\r\n    \"type\": \"EXPENSE\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transaction"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 22 May 2025 19:25:15 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 11,\n    \"amount\": 1000,\n    \"date\": \"2025-05-01\",\n    \"type\": \"EXPENSE\",\n    \"category\": {\n        \"id\": 3,\n        \"name\": \"Travel\",\n        \"type\": \"EXPENSE\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "View monthly summaries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/summary/2025/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"summary",
+						"2025",
+						"5"
+					]
+				},
+				"description": "Generated from cURL: curl http://localhost:8080/api/summary/2025/5"
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/summary/2025/5",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/summary/2025/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"summary",
+								"2025",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 22 May 2025 19:25:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 7,\n        \"amount\": 80000,\n        \"date\": \"2025-05-01\",\n        \"type\": \"INCOME\",\n        \"category\": {\n            \"id\": 4,\n            \"name\": \"Salary\",\n            \"type\": \"INCOME\"\n        }\n    },\n    {\n        \"id\": 8,\n        \"amount\": 80000,\n        \"date\": \"2025-05-01\",\n        \"type\": \"INCOME\",\n        \"category\": {\n            \"id\": 5,\n            \"name\": \"Business\",\n            \"type\": \"INCOME\"\n        }\n    },\n    {\n        \"id\": 9,\n        \"amount\": 4000,\n        \"date\": \"2025-05-01\",\n        \"type\": \"EXPENSE\",\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Rent\",\n            \"type\": \"EXPENSE\"\n        }\n    },\n    {\n        \"id\": 10,\n        \"amount\": 3000,\n        \"date\": \"2025-05-01\",\n        \"type\": \"EXPENSE\",\n        \"category\": {\n            \"id\": 2,\n            \"name\": \"Food\",\n            \"type\": \"EXPENSE\"\n        }\n    },\n    {\n        \"id\": 11,\n        \"amount\": 1000,\n        \"date\": \"2025-05-01\",\n        \"type\": \"EXPENSE\",\n        \"category\": {\n            \"id\": 3,\n            \"name\": \"Travel\",\n            \"type\": \"EXPENSE\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Save/load data from a file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/path/to/transactions.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/load-file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"load-file"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8080/api/load-file \\\r\n  -F \"file=@/path/to/transactions.json\""
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/load-file",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Shweta Project/Shweta Miniproject/Expense.json"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/load-file",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"load-file"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 22 May 2025 19:46:01 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "File loaded successfully."
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,52 @@
+[
+    {
+        "amount": 80000,
+        "date": "2025-03-01",
+        "type": "INCOME",
+        "category": {
+            "id": 4,
+            "name": "Salary",
+            "type": "INCOME"
+        }
+    },
+    {
+        "amount": 80000,
+        "date": "2025-03-01",
+        "type": "INCOME",
+        "category": {
+            "id": 5,
+            "name": "Business",
+            "type": "INCOME"
+        }
+    },
+    {
+        "amount": 4000,
+        "date": "2025-03-01",
+        "type": "EXPENSE",
+        "category": {
+            "id": 1,
+            "name": "Rent",
+            "type": "EXPENSE"
+        }
+    },
+    {
+        "amount": 3000,
+        "date": "2025-03-01",
+        "type": "EXPENSE",
+        "category": {
+            "id": 2,
+            "name": "Food",
+            "type": "EXPENSE"
+        }
+    },
+    {
+        "amount": 1000,
+        "date": "2025-03-01",
+        "type": "EXPENSE",
+        "category": {
+            "id": 3,
+            "name": "Travel",
+            "type": "EXPENSE"
+        }
+    }
+]
